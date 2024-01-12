@@ -1,0 +1,58 @@
+@use "sass:math";
+
+@mixin btn($bg-color: $gray-3-color) {
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 500;
+	display: inline-block;
+	text-align: center;
+
+	padding: $base-padding $base-padding * 2;
+	border: 0;
+	background-color: $bg-color;
+	border-radius: math.div($base-border-radius, 2);
+
+	&:hover {
+		background-color: darken($bg-color, 8%);
+	}
+}
+
+@mixin btn-disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.btn {
+	@include btn;
+}
+
+@each $key, $val in $colors {
+	@if ($key == "primary" or $key == "secondary" or $key == "white") {
+		.btn-#{$key} {
+			@include btn($val);
+
+			&:hover {
+				background-color: darken($val, 8%);
+			}
+		}
+	}
+
+	@if ($key == "primary" or $key == "secondary" or $key == "black") {
+		.btn-outlined-#{$key} {
+			@include btn(transparent);
+			border: $base-border-width * 2 solid $val;
+
+			&:hover {
+				@if ($key == "black") {
+					color: $white-color;
+				}
+				background-color: $val;
+			}
+		}
+	}
+}
+
+.btn:disabled,
+.btn-disabled {
+	@include btn-disabled;
+}

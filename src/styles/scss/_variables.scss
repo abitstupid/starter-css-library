@@ -1,0 +1,53 @@
+// colors
+$primary-color: #4263eb;
+$secondary-color: #7048e8;
+$highlight-color: #f784ad;
+$error-color: #f03d3e;
+$notification-color: #d84910;
+$success-color: #374fc7;
+
+// shades of black
+$black-color: #212429;
+$gray-4-color: #495057;
+$gray-3-color: #acb5bd;
+$gray-2-color: #f8f9fa;
+$gray-1-color: #f8f9fa;
+$white-color: #ffffff;
+
+$colors: (
+	"primary": $primary-color,
+	"secondary": $secondary-color,
+	"highlight": $highlight-color,
+	"error": $error-color,
+	"notification": $notification-color,
+	"success": $success-color,
+	"black": $black-color,
+	"gray-4": $gray-4-color,
+	"gray-3": $gray-3-color,
+	"gray-2": $gray-2-color,
+	"gray-1": $gray-2-color,
+	"white": $white-color,
+);
+
+// base size
+$base-size: 8px;
+$base-size-rem: 0.5rem;
+
+// base spacing
+$base-margin: $base-size-rem !default;
+$base-padding: $base-size-rem !default;
+
+// base borders
+$base-border-width: 1px !default;
+$base-border-radius: 16px !default;
+
+// base box shadow
+$base-box-shadow: 1px 3px 5px rgb(0, 0, 0, 0.1) !default;
+
+// font sizes
+$base-font-size: 1rem; //16px
+$font-size-sm: $base-font-size * 0.75; //12px
+$font-size-md: $base-font-size * 1.31; //21px
+$font-size-lg: $base-font-size * 1.75; //28px
+$font-size-xl: $base-font-size * 2.375; //38px
+$font-size-xxl: $base-font-size * 3.125; //50px
