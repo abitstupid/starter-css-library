@@ -1,9 +1,14 @@
 import "./App.scss";
+import Buttons from "./components/Buttons";
+import Colors from "./components/Colors";
+import Fonts from "./components/Fonts";
+import Grid from "./components/Grid";
 
 function App() {
 	return (
 		<>
-			<nav className="navbar bg-color-primary">
+			{/* navbar */}
+			<nav className="navbar-primary bg-color-primary">
 				<div className="container d-f">
 					<div className="logo text-white font-lg">Starter CSS</div>
 					<div className="nav-items">
@@ -16,22 +21,23 @@ function App() {
 						>
 							@abitstupid
 						</a>
+						<span className="text-gray-3"> (Demo)</span>
 					</div>
 				</div>
 			</nav>
-			<div className="container mb-3">
-				<h1 className="text-primary">Hello World</h1>
-				<h2 className="text-primary">Hello World</h2>
-				<h3 className="text-primary">Hello World</h3>
-				<h4 className="text-primary">Hello World</h4>
-				<h5 className="text-primary">Hello World</h5>
-				<p className="text-primary">Hello World</p>
-			</div>
+
+			{/* heading */}
+			<h1 className="text-primary ta-center">Starter CSS Libray</h1>
+
 			<div className="container">
-				<div className="btn btn-primary mr-3">Primary Button</div>
-				<div className="btn btn-primary btn-disabled">
-					Primary Disabled Button
-				</div>
+				{/* breakpoints */}
+				<Grid />
+				{/* font used */}
+				<Fonts />
+				{/* colors */}
+				<Colors />
+				{/* buttons */}
+				<Buttons />
 			</div>
 		</>
 	);

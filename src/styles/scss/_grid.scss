@@ -53,13 +53,22 @@ $layout-values: (
 	}
 }
 
-//base layout classes
-.container {
+%container {
 	width: 100%;
-	max-width: 1200px;
 
 	margin: 0 auto;
 	padding: 0 $base-padding * 2;
+}
+
+//base layout classes
+.container {
+	@extend %container;
+	max-width: 1200px;
+}
+
+.container-fluid {
+	@extend %container;
+	max-width: 100%;
 }
 
 .row {

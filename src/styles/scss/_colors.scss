@@ -38,7 +38,7 @@
 				}
 			}
 
-			.bg-#{$key}-light-#{$i} {
+			.bg-color-#{$key}-light-#{$i} {
 				background-color: mix(#ffffff, $val, $i * 10%);
 			}
 		}
