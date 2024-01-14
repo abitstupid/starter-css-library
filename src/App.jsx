@@ -28,7 +28,15 @@ function App() {
 
 			{/* heading */}
 			<h1 className="text-primary ta-center">Starter CSS Libray</h1>
-
+			<p className="ta-center mt-1">
+				<a
+					href="./assets/startercsslib.rar"
+					className="text-white btn btn-primary"
+					download={true}
+				>
+					Download
+				</a>
+			</p>
 			<div className="container">
 				{/* breakpoints */}
 				<Grid />
