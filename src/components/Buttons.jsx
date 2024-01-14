@@ -17,7 +17,7 @@ export default function Buttons() {
 			</div>
 			<h3 className="text-primary mb-2 ml-2">Disabled Buttons</h3>
 			<p className="ml-2 mb-2">
-				Note that the classes are jsut for UI purpose. To disabled the
+				Note that the classes are just for UI purpose. To disabled the
 				button either use JavaScrip or HTML disabled attribute.
 			</p>
 			<div className="btn btn-disabled mb-2 mr-3">.btn</div>
@@ -39,6 +39,28 @@ export default function Buttons() {
 			<div className="btn btn-outlined-black btn-disabled mb-2 mr-3">
 				.btn-outlined-black
 			</div>
+
+			<p className="font-lg p-2 br-sm mb-6 mt-4 text-info bg-color-gray-4 text-white">
+				This documentation is not complete. There are so many Utility
+				class like margin, padding, display are missing. To know more go
+				to my{" "}
+				<a
+					href="https://www.github.com/abitstupid"
+					className="text-primary"
+					target="_blank"
+					rel="noreferrer"
+				>
+					github profile
+				</a>{" "}
+				{/* or download the GitHub repo or the{" "}
+				<a
+					href="../assets/startercsslib.zip"
+					download={true}
+					className="text-primary"
+				>
+					css file
+				</a> */}
+			</p>
 		</>
 	);
 }

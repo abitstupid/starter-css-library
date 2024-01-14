@@ -5,6 +5,8 @@ import Fonts from "./components/Fonts";
 import Grid from "./components/Grid";
 
 function App() {
+	// const starterCssLibURL = "./assets/startercsslib.zip";
+
 	return (
 		<>
 			{/* navbar */}
@@ -28,15 +30,15 @@ function App() {
 
 			{/* heading */}
 			<h1 className="text-primary ta-center">Starter CSS Libray</h1>
-			<p className="ta-center mt-1">
+			{/* <p className="ta-center mt-1">
 				<a
-					href="./assets/startercsslib.rar"
+					href={starterCssLibURL}
+					download
 					className="text-white btn btn-primary"
-					download={true}
 				>
 					Download
 				</a>
-			</p>
+			</p> */}
 			<div className="container">
 				{/* breakpoints */}
 				<Grid />
